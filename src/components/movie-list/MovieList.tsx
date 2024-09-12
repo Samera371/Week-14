@@ -7,13 +7,14 @@ import MovieCard from "../movie-card/MovieCard";
 
 interface MovieListProps {
   movies: Movie[];
+  deleteMovie: (id: number) => void;
 }
 
-const MovieList = ({ movies }: MovieListProps) => {
+const MovieList = ({ movies, deleteMovie }: MovieListProps) => {
   return (
     <div className="movie-list">
       {movies.map((movie) => (
-        <MovieCard key={movie.id} movie={movie} />
+        <MovieCard key={movie.id} movie={movie} deleteMovie={deleteMovie} />
       ))}
     </div>
   );

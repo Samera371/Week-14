@@ -4,9 +4,10 @@ import { Movie } from "../../types";
 
 interface MovieCardProps {
   movie: Movie;
+  deleteMovie: (id: number) => void;
 }
 
-const MovieCard = ({ movie }: MovieCardProps) => {
+const MovieCard = ({ movie, deleteMovie }: MovieCardProps) => {
   // Calculate average rating
   const averageRating =
     movie.ratings.reduce((acc: number, rating: number) => acc + rating, 0) /
@@ -35,6 +36,12 @@ const MovieCard = ({ movie }: MovieCardProps) => {
         >
           Watch Trailer
         </a>
+        <div
+          onClick={() => deleteMovie(movie.id)}
+          className="movie-card-trailer-delete"
+        >
+          Delete Movie
+        </div>
       </div>
     </div>
   );

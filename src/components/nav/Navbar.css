@@ -36,6 +36,22 @@ html {
   color: white;
 }
 
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+#add-movie-icon {
+  margin-left: 10px;
+  transition: color 0.3s ease;
+  font-size: 2rem;
+}
+
+#add-movie-icon:hover {
+  color: #f87070;
+  cursor: pointer;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
