@@ -1,121 +1,131 @@
 /* Navbar.css */
 
-/* Basic reset */
+/* Basic reset for body and html elements */
 body,
 html {
-  margin: 0;
-  padding: 0;
-  font-family: "Arial", sans-serif;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: "Arial", sans-serif; /* Set default font family */
 }
 
+/* Styles for the navbar */
 .navbar {
-  background-color: #333;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  height: 52px;
+  background-color: #333; /* Dark background color */
+  color: white; /* White text color */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Full width */
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Position at the top of the page */
+  z-index: 1000; /* Ensure the navbar is above other elements */
+  height: 52px; /* Fixed height */
 }
 
+/* Container for navbar content */
 .navbar-container {
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Maximum width */
+  padding: 0 20px; /* Horizontal padding */
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Space out items */
+  align-items: center; /* Center items vertically */
 }
 
+/* Styles for the navbar logo */
 .navbar-logo {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: white;
+  text-decoration: none; /* Remove underline */
+  font-size: 1.5rem; /* Larger font size */
+  color: white; /* White text color */
 }
 
+/* Styles for the navbar brand */
 .navbar-brand {
-  display: flex;
-  align-items: center;
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
 }
 
+/* Styles for the add movie icon */
 #add-movie-icon {
-  margin-left: 10px;
-  transition: color 0.3s ease;
-  font-size: 2rem;
+  margin-left: 10px; /* Space to the left */
+  transition: color 0.3s ease; /* Smooth color transition */
+  font-size: 2rem; /* Larger font size */
 }
 
+/* Hover effect for the add movie icon */
 #add-movie-icon:hover {
-  color: #f87070;
-  cursor: pointer;
+  color: #f87070; /* Change color on hover */
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
+/* Styles for the navigation links */
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Flexbox layout */
+  gap: 20px; /* Space between items */
+  align-items: center; /* Center items vertically */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
+/* Styles for each navigation item */
 .nav-item {
-  display: inline-block;
+  display: inline-block; /* Inline block layout */
 }
 
+/* Styles for each navigation link */
 .nav-link {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+  color: white; /* White text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem; /* Default font size */
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
+/* Hover effect for navigation links */
 .nav-link:hover {
-  color: #f87070;
+  color: #f87070; /* Change color on hover */
 }
 
-/* Mobile menu icon */
+/* Styles for the mobile menu icon */
 .mobile-menu-icon {
-  display: none;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
+  display: none; /* Hide by default */
+  font-size: 2rem; /* Larger font size */
+  background: none; /* No background */
+  border: none; /* No border */
+  color: white; /* White text color */
+  cursor: pointer; /* Pointer cursor */
 }
 
-/* Responsive styles */
+/* Responsive styles for screens with a maximum width of 768px */
 @media (max-width: 768px) {
   .mobile-menu-icon {
-    display: block;
+    display: block; /* Show the mobile menu icon */
   }
 
   .nav-links {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: #333;
-    width: 100%;
-    text-align: center;
-    flex-direction: column;
-    gap: 0;
+    display: none; /* Hide navigation links by default */
+    position: absolute; /* Absolute positioning */
+    top: 60px; /* Position below the navbar */
+    right: 0; /* Align to the right */
+    background-color: #333; /* Dark background color */
+    width: 100%; /* Full width */
+    text-align: center; /* Center text */
+    flex-direction: column; /* Column layout */
+    gap: 0; /* No gap between items */
   }
 
   .nav-links.active {
-    display: flex;
+    display: flex; /* Show navigation links when active */
   }
 
   .nav-item {
-    width: 100%;
-    padding: 10px 0;
+    width: 100%; /* Full width */
+    padding: 10px 0; /* Vertical padding */
   }
 
   .nav-link {
-    display: block;
-    width: 100%;
-    padding: 10px;
+    display: block; /* Block layout */
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the link */
   }
 }

@@ -1,22 +1,22 @@
 import "./Navbar.css"; // Import the CSS file for styling
 
-import { NewMovie } from "../../types";
-// Navbar.js
-import { useState } from "react";
+import { NewMovie } from "../../types"; // Import the NewMovie type from the types directory
+import { useState } from "react"; // Import the useState hook from React
 
 interface NavbarProps {
-  addMovie: (movie: NewMovie) => void;
+  addMovie: (movie: NewMovie) => void; // Define the props interface for the Navbar component
 }
 
 const Navbar = ({ addMovie }: NavbarProps) => {
   // State to manage mobile menu visibility
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Toggle mobile menu visibility
+  // Function to toggle mobile menu visibility
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  // Temporary new movie object to be added when the add movie icon is clicked
   const tempNewMovie: NewMovie = {
     type: "movie",
     title: "New Movie",
@@ -40,12 +40,12 @@ const Navbar = ({ addMovie }: NavbarProps) => {
             +
           </div>
         </div>
-        {/* Hamburger menu for mobile */}
+        {/* Hamburger menu button for mobile view */}
         <button className="mobile-menu-icon" onClick={toggleMobileMenu}>
           {isMobileMenuOpen ? (
-            <span>&#10005;</span> // X icon
+            <span>✕</span> // X icon for closing the menu
           ) : (
-            <span>&#9776;</span> // Hamburger icon
+            <span>☰</span> // Hamburger icon for opening the menu
           )}
         </button>
         {/* Navbar links */}
@@ -76,4 +76,4 @@ const Navbar = ({ addMovie }: NavbarProps) => {
   );
 };
 
-export default Navbar;
+export default Navbar; // Export the Navbar component as the default export

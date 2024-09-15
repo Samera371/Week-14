@@ -1,86 +1,99 @@
 /* MovieCard.css */
 
+/* Styles for the movie card container */
 .movie-card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
+  background-color: #fff; /* White background for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden; /* Hide overflow content */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Column direction for flex items */
 }
 
+/* Hover effect for the movie card */
 .movie-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px); /* Lift the card up */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
+/* Styles for the movie card image */
 .movie-card-image {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Full width image */
+  height: auto; /* Maintain aspect ratio */
 }
 
+/* Styles for the movie card content container */
 .movie-card-content {
-  padding: 16px;
+  padding: 16px; /* Padding inside the content container */
 }
 
+/* Styles for the movie title */
 .movie-card-title {
-  font-size: 1.25rem;
-  margin: 0;
-  color: #333;
+  font-size: 1.25rem; /* Larger font size for the title */
+  margin: 0; /* Remove default margin */
+  color: #333; /* Dark gray color */
 }
 
+/* Styles for the movie release year */
 .movie-card-year {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 8px;
+  font-size: 0.9rem; /* Smaller font size */
+  color: #666; /* Medium gray color */
+  margin-bottom: 8px; /* Space below the year */
 }
 
+/* Styles for the movie genres */
 .movie-card-genre {
-  font-size: 0.85rem;
-  color: #007bff;
-  margin-bottom: 12px;
+  font-size: 0.85rem; /* Smaller font size */
+  color: #007bff; /* Blue color */
+  margin-bottom: 12px; /* Space below the genres */
 }
 
+/* Styles for the movie description */
 .movie-card-description {
-  font-size: 0.85rem;
-  color: #444;
-  margin-bottom: 12px;
+  font-size: 0.85rem; /* Smaller font size */
+  color: #444; /* Dark gray color */
+  margin-bottom: 12px; /* Space below the description */
 }
 
+/* Styles for the average rating */
 .movie-card-rating {
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 12px;
+  font-size: 0.9rem; /* Slightly larger font size */
+  font-weight: bold; /* Bold text */
+  color: #333; /* Dark gray color */
+  margin-bottom: 12px; /* Space below the rating */
 }
 
+/* Styles for the trailer link */
 .movie-card-trailer-link {
-  display: inline-block;
-  padding: 8px 12px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  display: inline-block; /* Inline block element */
+  padding: 8px 12px; /* Padding inside the link */
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
+/* Styles for the delete button */
 .movie-card-trailer-delete {
-  display: inline-block;
-  padding: 8px 12px;
-  background-color: red;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  margin-left: 10px;
+  display: inline-block; /* Inline block element */
+  padding: 8px 12px; /* Padding inside the button */
+  background-color: red; /* Red background */
+  color: #fff; /* White text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  margin-left: 10px; /* Space to the left of the button */
 }
 
+/* Hover effect for the trailer link */
 .movie-card-trailer-link:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
+/* Hover effect for the delete button */
 .movie-card-trailer-delete:hover {
-  background-color: lightcoral;
-  cursor: pointer;
+  background-color: lightcoral; /* Lighter red on hover */
+  cursor: pointer; /* Pointer cursor on hover */
 }
